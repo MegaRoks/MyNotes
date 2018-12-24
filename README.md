@@ -7,6 +7,7 @@ Simple server application of my notes on node.js
 To quickly create and configure a database, we use the [mLab](https://mlab.com/) service. Working with him is easy, for small amounts of information he is free.
 
 <h3>Installing</h3>
+
 Clone repository:
 
 ```javascript
