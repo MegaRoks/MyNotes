@@ -18,6 +18,26 @@ npm:
 ```javascript
 npm install
 ```
+
+Create an account on mLab and deploy the new MongoDB database. To do this, click on the `Create New` button in the MongoDB Deployments section, in the appeared window, in the `Plan` section, select Single-node. Click `Continue`, select the `Sandbo`x server and give the database a name. Next, in the database management window, go to the Users tab and add a database `user`, setting a name and password.
+
+Add the `config` directory to the project root, create a `db.js` file in it.
+
+```
+mkdir config 
+cd config
+touch db.js
+```
+Add the following to the `db.js` file:
+
+```javascript
+module.exports = {
+  url : "mongodb://<dbuser>:<dbpassword>@ds040089.mlab.com:40089/dbnotes"
+};
+```
+
+Do not forget to add the username and password to the URL (not the ones from the account in mLab, but those created for the database). If you are posting a project on Github, be sure to include db.js in the .gitignore file. So you will not make the public domain the name and password for working with the database.
+
 run:
 
 ```
