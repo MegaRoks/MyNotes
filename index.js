@@ -4,7 +4,7 @@ let port = process.env.PORT || 8080;
 let apiRoutes = require("./routes/route");
 let bodyParser = require("body-parser");
 let mongoose = require("mongoose");
-let db = mongoose.connection;
+let db = require("./config/db");
 
 app.use(
   bodyParser.urlencoded({
@@ -15,7 +15,7 @@ app.use(
 app.use(bodyParser.json());
 
 mongoose.connect(
-  "mongodb://localhost/mynotes",
+  db.url,
   { useNewUrlParser: true }
 );
 
