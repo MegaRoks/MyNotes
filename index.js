@@ -19,7 +19,7 @@ mongoose.connect("mongodb://localhost/mynotes");
 app.use("/api", apiRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Hello World with Express");
+  res.send("Hello. This server runs on ports 8080");
 });
 
 app.listen(port, () => {
