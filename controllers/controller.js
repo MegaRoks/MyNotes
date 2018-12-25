@@ -1,4 +1,5 @@
 Note = require("../models/model");
+
 exports.index = function(req, res) {
   Note.get(function(err, notes) {
     if (err) {
