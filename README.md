@@ -27,14 +27,6 @@ mongo --version
 
 If `MongoDb` is not installed on your machine, you should head to [MongoDb Download Center]( https://www.mongodb.com/download-center/community/) , download and install the version compatible with your operating system before you continue.
 
-Add the following to the `db.js` file:
-
-```javascript
-module.exports = {
-  url : "mongodb://<dbuser>:<dbpassword>@ds040089.mlab.com:40089/dbnotes"
-};
-```
-
 run:
 
 ```
