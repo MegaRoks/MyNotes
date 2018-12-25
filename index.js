@@ -14,7 +14,7 @@ app.use(
 
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost/mynotes");
+mongoose.connect("mongodb://localhost/mynotes", {useNewUrlParser: true});
 
 app.use("/api", apiRoutes);
 
