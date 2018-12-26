@@ -1,5 +1,5 @@
 # MyNotes
-Simple server application of my notes on node.js
+A simple server made using MVC on node.js for working with persistent data stores.
 
 <h2>Getting Started</h2>
 <h3>Prerequisites</h3>
