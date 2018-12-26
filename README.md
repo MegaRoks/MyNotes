@@ -1,4 +1,6 @@
 # MyNotes
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MegaRoks/db-server-crud/blob/master/LICENSE)
+
 A simple server made using MVC on node.js for working with persistent data stores.
 
 <h2>Getting Started</h2>
